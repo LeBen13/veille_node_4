@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <meta charset="UTF-8">
+ <title>Mon Application</title>
+ <link rel="stylesheet" type="text/css" href="../public/less/style.css">
+</head>
+<body>
+ <table class="tableau">
+ <% for(var i=0; i < data.membres.length; i++) { %>
+              <li>
+                Nom: <%= data.membres[i].nom %><br>
+                Prénom: <%= data.membres[i].prenom %><br>
+                Téléphone: <%= data.membres[i].tel %><br>
+                Courriel: <%= data.membres[i].email %><br>
+              </li>
+            <% } %>
+ </table>
+</body>
+</html>
